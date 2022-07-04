@@ -5,7 +5,7 @@ const weather = require('./utils/fetch-weather')
 
 
 
-// to use handlebars partials first we need to add hbs
+// to use handlebars partials first we need to add hbs.
 const hbs = require('hbs')
 
 // now the main purpose is to load directory content / file in express server 
