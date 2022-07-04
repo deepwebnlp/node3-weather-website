@@ -1,0 +1,68 @@
+/* which tags u want want to apply style so h1 {} */
+h1{
+    color: grey;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* we use selector to apply css to specific element for this we use . followed by class name */
+.portrait{
+    width: 250px;
+    
+}
+/* which tags u want want to apply style so body {} all body tags in html */
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    /* 0 is margin value of top and bottom and auto is left and reight margin */
+    margin: 0 auto;
+    padding: 0 16px;
+
+    /* applying flex box css property to make footer sticky */
+
+    display: flex;
+    /* every child of body direction is column */
+    flex-direction: column;
+    /* vh is view port height view port is basically view / screen where data is show */
+    min-height: 100vh;
+}
+
+.main-content{
+    /* allow element to grab as much space as it needs 1 means grap all leftover space */
+    flex-grow: 1;
+}
+
+footer{
+    color: #888888;
+        /* 1 is width of border solid is style of border #EEEEEE is color of border  */
+    border-top: 1px  solid #EEEEEE ;
+    margin-top: 16px ;
+    padding: 16px 0;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+/* applying css to links inside jeader   */
+header a{
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+
+input{
+    border: 1px solid #CCCCCC;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}

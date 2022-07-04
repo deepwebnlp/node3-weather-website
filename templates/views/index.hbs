@@ -1,0 +1,64 @@
+<!--// handle bars templating engine.
+//handle bars is nothing but a html with a nics features of injecting dynamic values.
+-->
+<html>
+
+<head>
+  {{!-- title is give the title to web page like this title is shown on chrome tab --}}
+  <title>
+        Weather
+    </title>
+
+{{!-- setting icon to web page  --}}
+<link rel = "icon" href="img/Screen Shot 2022-06-20 at 8.42.29 PM.png">
+<link rel = "stylesheet" href = "css/styles.css">
+
+
+
+</head>
+
+
+<body>
+
+  <div class = "main-content">
+<!-- to add partials in file we use below syntax and header is partail name -->
+    {{>header}}
+
+    <p>Use this site to get your weather</p>
+
+{{!-- to get input from user --}}
+    <form>
+
+      <input placeholder="Location">
+
+      <button>Search </button>
+
+    </form>
+
+    <p id = "messageOne"></p>
+
+
+    <p id="messageTwo"></p>
+
+
+    <!-- to access value in hbs file we use 2 curly bracket and vlaue name we wnat to access in these 2 curly bracket -->
+
+{{!-- <h1>
+    {{title}}
+</h1>
+<p>
+  Created by  {{name}}
+</p> --}}
+
+  </div>
+
+
+
+{{!-- to achieve sticky footer we use css property flex box  --}}
+{{>footer}}
+
+<script src="js/app.js"></script>
+</body>
+
+
+</html>
